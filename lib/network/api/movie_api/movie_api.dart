@@ -6,7 +6,6 @@ import '../../response/movie_response/movie_response.dart';
 part 'movie_api.g.dart';
 @RestApi(baseUrl: kMovieBaseUrl)
 abstract class MovieApi{
-
   factory MovieApi(Dio dio) = _MovieApi;
   @GET(kMoveGetNowPlayingEndPoint)
   Future<MovieResponse> getAllNowPlayingMovie(

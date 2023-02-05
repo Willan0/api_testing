@@ -7,5 +7,5 @@ part 'fake_store_api.g.dart';
 abstract class FakeStoreAPI{
   factory FakeStoreAPI(Dio dio) = _FakeStoreAPI;
   @GET(kGetAllProductEndPoint)
-  Future<List<FakeStoreVO>> getAllProducts();
+  Future<List<FakeStoreVO>?> getAllProducts();
 }
